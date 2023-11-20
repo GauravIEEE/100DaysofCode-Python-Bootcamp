@@ -1,0 +1,17 @@
+print("Welcome to the Band Name Generator.") #prints the statement
+street = input("What's the name of the city you grew up in?\n") #takes input from the user asking for the city you grew up in
+pet = input("What's your pet's name?\n") #takes input from the users asking for their pet name
+print("Your band name could be " + street + " " + pet)  #prints the name of the band based on the input from the user
+like = input("Do you like the band name using our generator? Y or N? ")
+if like == "Y":
+   print("Thank you for using the band generator")
+else:
+  print("Try Again")
+  street = input("What's the name of the city you grew up in?\n")
+  pet = input("What's your pet's name?\n")
+  print("Your band name could be " + street + " " + pet)
+  like = input("Do you like the band name using our generator? Y or N? ")
+  if like == "Y":
+     print("Thank you for using the band generator")
+  else:
+    print("Try Again")
