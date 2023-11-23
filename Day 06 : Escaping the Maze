@@ -1,0 +1,17 @@
+#When position is defined
+#When direction of robot is not defined
+#When the hurdles and robot both the postions are random
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+while not at_goal():
+     if right_is_clear():
+            turn_right()
+            move()
+     elif front_is_clear():
+            move()
+     else :
+            turn_left()
